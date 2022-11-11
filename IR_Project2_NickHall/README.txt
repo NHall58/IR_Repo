@@ -15,4 +15,5 @@ queries through the desired models, simply change the values in the "queries" da
 
 Usage: After the index has been created, the user has the freedom to see the retrieval results for any model that PyTerrier or Ranx includes. Queries to
 input into these models can be altered in the queries dataframe as long as it follows the "qid" "query" format. .transform(queries) can be called after using PyTerriers'
-batch retrieve method in order to get the query results.
+batch retrieve method in order to get the query results. These results can also be evaluated using Ranx's evaluate method as long as the results from the model
+have been saved to tsv and then saved into a run by using using Run.from_file.
